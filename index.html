@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg  rounded-2">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+        <div class="nav-info d-flex">
+          <i class="fa-solid fa-cloud-sun-rain" aria-hidden="true"></i>
+      <div>
+            <h1 class="position-relative">Weather</h1>
+            <small class="position-relative">tagline goes here</small>
+           </div>
+          </div>
+        </a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-2 ">
+              <a class="nav-link active px-4 " aria-current="page" href="#">Home</a>
+            </li>
+            
+            <li class="nav-item mx-2">
+              <a class="nav-link text-white px-4" aria-current="page" href="#">News</a>
+            </li>
+            
+            <li class="nav-item mx-2">
+              <a class="nav-link text-white px-4" aria-current="page" href="#">Live cameras</a>
+            </li>
+             <li class="nav-item mx-2">
+              <a class="nav-link text-white px-4" aria-current="page" href="#">Photos</a>
+            </li>
+            
+            <li class="nav-item mx-2">
+              <a class="nav-link text-white px-4" aria-current="page" href="#">Contact</a>
+            </li>
+            
+          </ul>
+      
+        </div>
+      </div>
+    </nav>
+
+
+    <!-----start section---->
+     <section class=" pt-5 ">
+    <div class="container w-75">
+      <!-- search input -->
+      <div class="mb-3 position-relative my-5">
+        <input id="countrySearch" type="text" class="input form-control border-0 rounded-pill py-3 " placeholder="Find your location...">
+        <button id="searchBtn" class="inputBtn btn rounded-pill position-absolute py-2 px-5 " >Find</button>
+      </div>
+      <!-- cards section -->
+      <div class="row g-0 my-5 ">
+        <div class="col-md-4 ">
+          <div id="card1" class="card mb-3 border-0"><div class="header-custom-light card-header d-flex justify-content-between">
+                <div class="day">Friday</div>
+                <div class="date">20June</div>
+              </div>
+              <div class="body-custom-light card-body ">
+                <h5 class="card-title ">Cairo</h5>
+                <div class="card-text">
+                    <!-- degree div -->
+                    <div class="degree d-flex justify-content-between ">
+                        <h1>30.2<sub class="sub-top">o</sub>C</h1>
+                       <img src="https://cdn.weatherapi.com/weather/images/113.png" alt="sun">
+
+                    </div>
+                    <p class="weatherCondition ">Clear</p>
+                    <span class="px-2"><img src="https://cdn-icons-png.flaticon.com/128/1163/1163657.png" alt="umbrella">0% </span>
+                    <span class="px-2"><img src="images/icon-wind@2x.png" alt=""> 20.9km/h </span>
+                    <span class="px-2"><img src="images/icon-compass@2x.png" alt=""></i> NNW </span>
+                </div>
+              </div></div>
+        </div>
+        <div class="col-md-4 ">
+          <div id="card2" class="card mb-3 border-0">  <div class="header-custom-dark card-header d-flex justify-content-center">
+            <div class="day">Saturday</div>
+          </div>
+          <div class="body-custom-dark card-body text-center ">
+             <div class="cardImg">
+             <img src="https://cdn.weatherapi.com/weather/images/113.png" alt="sun">
+          </div>
+          <div class="degreeAfter">
+            <h4>38.7<sub class="sub-top">o</sub>C</h4>
+          </div>
+          <small>23.9<sub class="sub-top">o</sub></small>
+          <p class="weatherCondition">Sunny</p>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div id="card3" class="card mb-3 border-0">  <div class="header-custom-light card-header d-flex justify-content-center">
+                <div class="day">Sunday</div>
+              </div>
+              <div class="body-custom-light2 card-body text-center  ">
+    
+                 <div class="cardImg">
+               <img src="https://cdn.weatherapi.com/weather/images/113.png" alt="sun">
+              </div>
+              <div class="degreeAfter">
+                <h4>37.6<sub class="sub-top">o</sub>C</h4>
+              </div>
+              <small>24.7<sub class="sub-top">o</sub></small>
+              <p class="weatherCondition">Sunny</p>
+              </div></div>
+        </div>
+
+      </div>
+    </div>
+
+  
+    </section>
+    <!-----end section---->
+
+<!-----footer section---->
+<footer>
+     <div class="container w-75 py-4">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="mb-3 position-relative my-5">
+            <input type="email" class=" input form-control border-0 rounded-pill py-3" placeholder="Enter your email...">
+            <button class="inputBtn btn rounded-pill position-absolute py-2 px-5">Subscribe</button>
+          </div>
+        </div>
+       
+          <div class="col-md-4">
+          <div class="social-icons text-center pt-5  "> 
+          
+              <a><i class="fa-brands fa-facebook text-primary  " aria-hidden="true"></i></a>
+              <a><i class="fa-brands fa-twitter text-primary" aria-hidden="true"></i></a>
+              <a><i class="fa-brands fa-google text-danger" aria-hidden="true"></i></a>
+              <a><i class="fa-brands fa-pinterest text-danger" aria-hidden="true"></i></a>
+           
+          </div>
+          </div>
+          <p class="pt-3">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+          </div>
+</footer>
+<!-----footer section---->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
